@@ -1,0 +1,475 @@
+*{
+    padding: 0px;
+    margin: 0px auto;
+    text-decoration:none;
+    list-style:none;
+}
+
+#info{
+    position:relative;
+    display:grid;
+    background-color:rgb(32, 29, 56);
+    grid-template-columns:2fr 1fr 1fr 1fr;
+        grid-gap: 0px;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "randomtext . laptop laptop" ". . . . ";
+    box-shadow: 0 5px 10px gray;
+    z-index:10;
+    box-shadow:0 5 10 0 rgb(33, 32, 48);
+}
+#aboutus{
+    font-family: calibri;
+    padding:5;
+    position:absolute;
+    top:12.5%;
+    left:7%;
+    z-index:10;
+    background-color : rgb(32, 29, 56);}
+#tilted-square{
+    position:absolute;
+    background-image: linear-gradient(-20deg, rgba(151, 52, 158, 0.356),rgba(63, 56, 143, 0.397)) ;  
+    width : 35%;
+    height: 50%;
+    left:5%;
+    top :17%;
+    border-radius: 5%;
+    transform: rotate(-3deg);
+    z-index:1;
+    box-shadow:0 10px 10px 5px rgba(71, 70, 70, 0.295);
+    transition:0.4s;
+    
+}
+    
+
+#randomtext{
+    color:white;
+    font-family: cambria;
+    padding:40;
+    padding-left:15;
+    padding-right:1;
+    border-radius: 2%;
+    border-top-right-radius: 5%;
+    line-height: 1.2;
+    margin-top:24%;
+    grid-area: randomtext;
+    margin-left:13%;
+    border : solid rgb(163, 115, 24);
+    z-index:10;
+    box-shadow:0 10px 10px 5px rgba(71, 70, 70, 0.295);
+    transition:0.2s;
+    text-shadow : 0.1 2.2 4; 
+    margin-bottom:0%;
+}
+#randomtext:hover{
+    border-top-right-radius: 9%;
+}
+#randomtext:hover #tilted-square{
+    transform: rotate(-6deg);
+}
+#laptop{
+    grid-area:laptop;
+    position:relative;
+    margin-top:35%;
+    transition:1s;
+}
+#laptop:hover{
+    width: auto;
+    height: 370;
+}
+img#midbutton{
+    border-radius: 25%;
+    top : 9px;
+    padding-left:37.5%;
+    z-index: 5;
+    position:fixed;
+}
+#upmenu{
+    height: 80px;
+    width:100%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 5px 10px rgb(16, 17, 26);
+    position:fixed;
+    margin:auto;
+    z-index:20;
+}
+#login{
+    position:absolute;
+    left:75%;
+    color:white;
+    font-family:Cambria;
+    font-size :0.7em;
+
+}
+.things-to-fill input{
+    font-family:cursive;
+    background-color:rgb(82, 76, 97);
+    border-width:0;
+    border-radius : 2px;
+    color:rgb(255, 255, 255);
+    transition:0.5s;
+}
+.things-to-fill input:hover{
+    background-color: rgba(224, 84, 84, 0.774);
+    color:rgb(16, 13, 27);
+}
+#logbuttons{
+    position:relative;
+    display:flex; 
+}
+#log{
+    background-color:rgba(0, 132, 255, 0.678);
+    width:25%;
+    height: 25;
+    margin-left:-10%;
+    margin-top:5%;
+    box-shadow:0 0 0 0 rgb(0, 45, 128);
+    transition:0.2s;
+    text-align:center;
+}
+#log:hover{
+    box-shadow:0 4 0 0 rgb(0, 9, 128);
+    cursor:pointer;
+}
+#reg{
+    background-color:rgba(33, 160, 29, 0.61);
+    width:25%;
+    height: 25px;
+    margin-top:5%;
+    transition:0.2s;
+    text-align:center;
+}
+#reg:hover{
+    box-shadow: 0 4 0 0 rgb(8, 49, 8);
+    cursor:pointer;
+}
+#pass{
+    position:relative;
+    left:1.5%;
+
+}
+#profile{
+    margin-left:103%;
+    margin-top:-15%;
+}
+#upmenu,#links{
+    position: fixed;
+    margin : auto;
+    font-size: 1.4em; 
+}
+#links{
+    margin:auto;
+    display:flex;
+    height: 40px;
+    width : 30%;
+    position:relative;
+    align-items:center;
+    z-index:100;
+    bottom:53;
+    font-family: calibri;
+}
+#links1{
+    display:flex;
+    position:fixed;
+    margin:auto;
+    left:23.5%
+}
+#links2{
+    display:flex;
+    position:relative;
+    margin:auto;
+    left : 40%
+}
+.mlink{
+    padding:0 25;
+    color:rgb(114, 107, 107);
+}
+div#circle{
+    position: fixed;
+    background-color: black;
+    box-shadow: 0 5px 5px rgb(24, 21, 21); 
+    width : 90px;
+    height : 90px;
+    border-radius: 50%;
+    top: 20px;
+    left:43.15%;
+    z-index:1;
+}
+.underlines{
+    position:absolute;
+    background-color:rgb(114, 107, 107);
+    height:3px;
+    width:0px; 
+    bottom:0;
+    left:0;
+    transition:0.5s;
+    border-radius: 10%
+
+}
+#line2{
+    left:56%;
+}
+#line4{
+    left:53%;
+}
+#line1,#line3{
+    left:8%
+}
+#fulllink1:hover  .underlines{
+    width : 33%;
+    background-color:rgb(165, 47, 47);
+}
+#fulllink2:hover  .underlines{
+    width : 36%;
+    background-color:rgb(165, 47, 47);
+}
+#fulllink3:hover  .underlines{
+    width : 30%;
+    background-color:rgb(165, 47, 47);
+}
+#fulllink4:hover  .underlines{
+    width : 40%;
+    background-color:rgb(165, 47, 47);
+}
+.mlink:hover{
+    color : rgb(218, 89, 89);
+}
+#sec2{
+    background-image: url("https://www.learnetic.com/wp-content/uploads/2016/12/Abstract-network-connection-background-488611584_4212x2369.jpeg");
+    background-attachment : fixed;
+    top:50%;
+    place-items:center;
+}
+#cards{
+    color:rgba(0, 255, 213, 0.678);
+    text-shadow : 0.1 2.2 10; 
+    position:relative;
+    display: grid;
+    grid-gap:8%;
+    place-items:center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "box1 box2 box3";
+    width:80%;
+    height: 100%;
+    line-height: 1.4em;
+    top:10%;
+
+}
+#box1{
+    border-radius:20px;
+    border-top-left-radius: 0;
+    grid-area: box1;
+    background-color:rgba(60, 70, 128, 0.486);
+    height: 400px;
+    padding-left:4%;
+    padding-right:4%;
+    box-shadow: 0 0 0 0 rgb(35, 35, 78);
+    border:solid rgba(206, 183, 183, 0.411);
+    transition:1s;
+}
+#box1:hover{
+    border: rgb(197, 188, 188) outset 5px;
+    box-shadow: 6 4 7 1 rgb(8, 8, 20);
+}
+
+
+
+
+#box2{
+    border-radius:20px;
+    grid-area: box2;
+    border-top-left-radius: 0;
+    background-color:rgba(60, 70, 128, 0.486);
+    height: 400px;
+    padding-left:4%;
+    padding-right:4%;
+    box-shadow: 0 0 0 0 rgb(35, 35, 78);
+    border:solid rgba(206, 183, 183, 0.411);
+    transition:1s;
+
+
+}
+#box2:hover{
+    border: rgb(197, 188, 188) outset 5px;
+    box-shadow: 6 4 7 1 rgb(8, 8, 20);
+}
+
+#box3{
+    border-radius:20px;
+    grid-area: box3;
+    border-top-left-radius: 0;
+    background-color:rgba(60, 70, 128, 0.486);
+    height: 400px;
+    padding-left:4%;
+    padding-right:4%;
+    box-shadow: 0 0 0 0 rgb(35, 35, 78);
+    border:solid rgba(206, 183, 183, 0.411);
+    transition:1s;
+
+
+}
+#box3:hover{
+    border: rgb(197, 188, 188) outset 5px;
+    box-shadow: 6 4 7 1 rgb(8, 8, 20);
+}
+
+.boxes{
+    font-family: calibri;
+    font-size:1em;
+}
+.webdev-title{
+    font-size:1.25em;
+}
+.randomline{
+    width :75%;
+    height: 2px;
+    background-color: rgb(71, 71, 92);
+
+}
+.buttons{
+    margin-top:5px;
+    width:180px;
+    height: 50px;
+    background-color:purple;
+    border-width:0;
+    transition:1s;
+    border-radius:5px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+
+}
+.buttons a{
+    color:white;
+    font-family: sans-serif;
+    transition:1s;
+}
+.upperline{
+    position:relative;
+    background-color:purple;
+    width:2%;
+    height:3px;
+    margin-right:0%;
+    left:0%;
+    top:-59%;
+    transition:1s;
+}
+.bottomline{
+    position:relative;
+    background-color:purple;
+    width:2%;
+    height:3px;
+    margin-right:100%;
+    top:30%;
+    left:0%;
+   
+    transition:1s;
+}
+.buttons:hover .upperline{
+    width:99%;
+}
+.buttons:hover .bottomline{
+    width:99%;
+}
+.buttons:hover{
+    background-color:white;
+    border-width:0px;
+}
+.buttons:hover a{
+    color:purple;
+}
+#galsec{
+    background-color:rgb(18, 18, 37);
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas:"img1 img2 img3"
+                        "img1 img4 img4";
+    position:relative;
+    padding-top:4%;
+    width:100%;
+    height: 500px;
+    grid-gap:2px;
+                      
+}
+#img1{
+    height: 450;
+    width:400;
+    box-shadow:0 0 20 0 black;
+}
+#img2{
+    height: 250;
+    width:400;
+    box-shadow:0 0 20 0 black;
+}
+#img3{
+    height: 250;
+    width:400;
+    box-shadow:0 0 20 0 black;
+}
+#img4{
+    position:absolute;
+    grid-area:img4;
+    height: 200;
+    width:800;
+    top:700%;
+    right:-45%;
+    box-shadow:0 0 20 0 black;
+}
+#sec3{
+    background-color:rgb(18, 18, 37);
+}
+#sec4{
+    background-color:rgb(18, 18, 37);
+    display:grid;
+    grid-gap:50px;
+    width:100%;
+    height: 110%;
+
+}
+#sec4 h2{
+    color:rgb(182, 166, 166)
+}
+#form{
+    border : solid;
+    background-color:rgb(66, 66, 136);
+    transition:1s;
+    padding:20px;
+    border-radius:10%;
+}
+#in1{
+    width:250px;
+    border-radius:5%;
+    border:solid orange;
+}
+
+#in2{
+    width:250px;
+    border-radius:5%;
+    border:solid orange;
+}
+#in3{
+    width:250px;
+    border-radius:5%;
+    border:solid orange;
+}
+#in4{
+    width:250px;
+    border-radius:5%;
+    border:solid orange;
+}
+#in5{
+    width:300px;
+    height: 100px;
+    border-radius:5%;
+    border:solid orange;
+}
+#form:hover{
+    border: rgb(197, 188, 188) outset 5px;
+    box-shadow: 6 4 7 1 rgb(8, 8, 20);
+}
+#form text{
+    font-family: calibri;
+    font-weight: bold;
+    color:rgb(46, 34, 42);
+}
